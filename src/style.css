@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --BACKCOLOR: #cccccc;
+    --BORDERCOLOR: #e7e7e7;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+code {
+    font-size: 1.2em;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+#root {
+    margin-top: 80px;
+    background-color: var(--BACKCOLOR);
+    width: fit-content;
+    border: 4px outset var(--BORDERCOLOR);
+    position: relative;
+}
+
+header {
+    margin: 15px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--BACKCOLOR);
+    border: 4px inset var(--BORDERCOLOR);
+}
+
+.num {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    align-self: center;
+    color: #d82828;
+    background-color: #292929;
+    width: 86px;
+    text-align: center;
+}
+
+main {
+    margin: 15px;
+    width: fit-content;
+    background-color: var(--BACKCOLOR);
+    border: 4px inset var(--BORDERCOLOR);
+}
+
+.square {
+    background: var(--BACKCOLOR);
+    border: 4px outset var(--BORDERCOLOR);
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+}
+
+.square:active, .cn {
+    background: var(--BACKCOLOR);
+    border: 1px solid #bdbdbd;
+}
+
+.bomb {
+    background-image: url('./images/flag-2.svg');
+    background-size: 80%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.l-bomb {
+    background-color: rgb(218, 167, 167);
+}
+
+.b {
+    background-image: url('./images/bomb-2.svg');
+    background-size: 80%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.n1 {
+    color: #2c28ff;
+}
+.n2 {
+    color: #077710;
+}
+.n3 {
+    color: #e41313;
+}
+.n4 {
+    color: #071a6b;
+}
+.n5 {
+    color: #7e0602;
+}
+.n6 {
+    color: #089e58;
+}
+.n7 {
+    color: #c7b61e;
+}
+.n8 {
+    color: #6b0bb9;
+}
+
+#restart {
+    margin: 5px 0;
+    background: var(--BACKCOLOR);
+    border: 5px outset var(--BORDERCOLOR);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+}
+
+#restart:active {
+    border:6px inset var(--BORDERCOLOR);
+}
+
+#restart.smile {
+    background-image: url('./images/smile.svg');
+}
+
+#restart.frown {
+    background-image: url('./images/frown.svg');
+}
+
+#restart.squint {
+    background-image: url('./images/squint.svg');
+}
+
+#level {
+    position: absolute;
+    top: -75px;
+    left: calc(50% - 25px);
+    margin: 5px 0;
+    background: var(--BACKCOLOR);
+    border: 5px outset var(--BORDERCOLOR);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+}
+
+#level:active {
+    border:6px inset var(--BORDERCOLOR);
+}
+
+#level.junior {
+    background-image: url('./images/up.svg');
+}
+
+#level.middle {
+    background-image: url('./images/up-double.svg');
+}
+
+#level.senior {
+    background-image: url('./images/up-triple.svg');
+}
